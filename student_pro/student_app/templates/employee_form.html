@@ -1,0 +1,127 @@
+{% comment %} <html>
+    <head>
+        <style>
+            #sbtn{
+                background-color:pink;
+                font-weight:700;
+                border-radius:15px 15px;
+            }
+        </style>
+        <title>document</title>
+    </head>
+    <body>
+        <center>
+        <form method='post'>
+            {% csrf_token %} {{form.as_p}}
+            <button type="submit" id="sbtn">save</button>
+        </form>
+    </canter>
+    </body>
+    </html> {% endcomment %}
+
+    {% comment %} <html>
+    <head>
+        <style>
+            body {
+                background-color: #f0f0f0; /* Light background color for the page */
+                font-family: Arial, sans-serif; /* Font style for the entire page */
+                display: flex; /* Use flexbox for centering */
+                justify-content: center; /* Center horizontally */
+                align-items: center; /* Center vertically */
+                height: 100vh; /* Full height of the viewport */
+                margin: 0; /* Remove default margin */
+            }
+            form {
+                background-color: white; /* White background for the form */
+                padding: 20px; /* Padding around the form */
+                border-radius: 10px; /* Rounded corners for the form */
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            }
+            #sbtn {
+                background-color: pink; /* Button background color */
+                font-weight: 700; /* Bold text */
+                border-radius: 15px; /* Rounded corners */
+                border: none; /* Remove border */
+                padding: 10px 20px; /* Padding inside the button */
+                cursor: pointer; /* Pointer cursor on hover */
+                transition: background-color 0.3s; /* Smooth background change */
+            }
+            #sbtn:hover {
+                background-color: #ff99cc; /* Darker shade on hover */
+            }
+        </style>
+        <title>Form Submission</title>
+    </head>
+    <body>
+        <center>
+            <form method='post'>
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" id="sbtn">Save</button>
+            </form>
+        </center>
+    </body>
+</html> {% endcomment %}
+<html>
+    <head>
+        <style>
+            body {
+                background-color: #f0f0f0; /* Light background color for the page */
+                font-family: Arial, sans-serif; /* Font style for the entire page */
+                display: flex; /* Use flexbox for centering */
+                justify-content: center; /* Center horizontally */
+                align-items: center; /* Center vertically */
+                height: 100vh; /* Full height of the viewport */
+                margin: 0; /* Remove default margin */
+            }
+            form {
+                background-color: white; /* White background for the form */
+                padding: 20px; /* Padding around the form */
+                border-radius: 10px; /* Rounded corners for the form */
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+                transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+            }
+            form:hover {
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+            }
+            input, textarea {
+                width: 100%; /* Full width for inputs */
+                padding: 10px; /* Padding inside inputs */
+                margin: 10px 0; /* Margin between inputs */
+                border: 1px solid #ccc; /* Light border */
+                border-radius: 5px; /* Rounded corners */
+                transition: border-color 0.3s; /* Smooth border color change */
+            }
+            input:focus, textarea:focus {
+                border-color: pink; /* Change border color on focus */
+                outline: none; /* Remove outline */
+            }
+            #sbtn {
+                background-color: pink; /* Button background color */
+                font-weight: 700; /* Bold text */
+                border-radius: 15px; /* Rounded corners */
+                border: none; /* Remove border */
+                padding: 10px 20px; /* Padding inside the button */
+                cursor: pointer; /* Pointer cursor on hover */
+                transition: background-color 0.3s, transform 0.2s; /* Smooth background and transform changes */
+            }
+            #sbtn:hover {
+                background-color: #ff99cc; /* Darker shade on hover */
+                transform: scale(1.05); /* Slightly enlarge button on hover */
+            }
+            #sbtn:active {
+                transform: scale(0.95); /* Slightly shrink button on click */
+            }
+        </style>
+        <title>Form Submission</title>
+    </head>
+    <body>
+        <center>
+            <form method='post'>
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" id="sbtn">Save</button>
+            </form>
+        </center>
+    </body>
+</html>
